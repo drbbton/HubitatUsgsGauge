@@ -13,7 +13,8 @@ import groovy.transform.Field
 @Field static final Map RANGE_COLORS = [red: "#d32f2f", yellow: "#f9a825", green: "#2e7d32"]
 
 metadata {
-    definition(name: "USGS Stream Gauge", namespace: "drbbton", author: "drbbton") {
+    definition(name: "USGS Stream Gauge", namespace: "drbbton", author: "drbbton",
+               importUrl: "https://raw.githubusercontent.com/drbbton/HubitatUsgsGauge/main/usgsgaugedriver.groovy") {
         capability "Sensor"
         capability "Refresh"
         capability "TemperatureMeasurement"

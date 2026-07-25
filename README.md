@@ -26,11 +26,25 @@ Default site: `USGS-05331833` — Namekagon River at Leonards, WI.
 - **Report water temperature in °F** — off = °C
 - **Debug logging**
 
-## Install
+## Installation
 
-1. **Drivers Code → New Driver**, paste `usgsgaugedriver.groovy`, Save.
-2. **Devices → Add Device → Virtual**, set Type to **USGS Stream Gauge**, Save.
-3. Set the site ID and thresholds in preferences, hit **Refresh**.
+### Option A — Hubitat Package Manager (recommended)
+
+1. Install [Hubitat Package Manager](https://hubitatpackagemanager.hubitatcommunity.com/) if you haven't already.
+2. Open HPM → **Install** → **Search by URL** and enter:
+   ```
+   https://raw.githubusercontent.com/drbbton/HubitatUsgsGauge/main/packageManifest.json
+   ```
+3. HPM will also pick up future updates via **Update**.
+
+### Option B — Manual
+
+1. **Drivers Code → + New Driver**, paste [`usgsgaugedriver.groovy`](usgsgaugedriver.groovy), Save. (The driver has an `importUrl`, so the **Import** button in Drivers Code can pull later versions.)
+
+### Then create the device
+
+1. **Devices → + Add Virtual Device**, set Type to **USGS Stream Gauge**, Save.
+2. Set the site ID and thresholds in preferences, hit **Refresh**.
 
 ## Dashboard
 
