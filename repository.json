@@ -1,0 +1,17 @@
+{
+  "author": "drbbton",
+  "gitHubUrl": "https://github.com/drbbton/HubitatUsgsGauge",
+  "packages": [
+    {
+      "id": "ef83d4b6-1da8-48d0-bfb7-8bf494a8bed4",
+      "name": "Hubitat USGS Stream Gauge",
+      "category": "Integrations",
+      "location": "https://raw.githubusercontent.com/drbbton/HubitatUsgsGauge/main/packageManifest.json",
+      "description": "Poll any USGS stream gauge (Water Data OGC API) for gage height, water surface elevation, discharge, and water temperature. Configurable red/yellow/green stage ranges with a colored dashboard attribute. No API key required.",
+      "tags": [
+        "Weather",
+        "Water"
+      ]
+    }
+  ]
+}
