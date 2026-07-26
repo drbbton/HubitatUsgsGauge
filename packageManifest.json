@@ -1,7 +1,7 @@
 {
   "packageName": "Hubitat USGS Stream Gauge",
   "author": "drbbton",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minimumHEVersion": "2.2.8",
   "dateReleased": "2026-7-25",
   "drivers": [
@@ -11,8 +11,8 @@
       "namespace": "drbbton",
       "location": "https://raw.githubusercontent.com/drbbton/HubitatUsgsGauge/main/usgsgaugedriver.groovy",
       "required": true,
-      "version": "1.0.0"
+      "version": "1.1.0"
     }
   ],
-  "releaseNotes": "1.0.0: Initial release. Polls the USGS Water Data OGC API (latest-continuous) for gage height, water surface elevation (NAVD88), discharge, and water temperature. Configurable red/yellow/green stage ranges with an HTML-colored dashboard attribute."
+  "releaseNotes": "1.1.0: Added Momentary capability - a dashboard Momentary tile now acts as a poll-now button (push triggers refresh). 1.0.0: Initial release."
 }

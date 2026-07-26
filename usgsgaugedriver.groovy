@@ -17,6 +17,7 @@ metadata {
                importUrl: "https://raw.githubusercontent.com/drbbton/HubitatUsgsGauge/main/usgsgaugedriver.groovy") {
         capability "Sensor"
         capability "Refresh"
+        capability "Momentary"   // push() -> refresh, so a dashboard Momentary tile acts as a "poll now" button
         capability "TemperatureMeasurement"
 
         attribute "gageHeight", "number"        // ft, arbitrary datum (pcode 00065)
@@ -59,6 +60,10 @@ def updated() {
         case "180": runEvery3Hours("refresh");    break
         default:    runEvery30Minutes("refresh")
     }
+    refresh()
+}
+
+def push() {
     refresh()
 }
 
